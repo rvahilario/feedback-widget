@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { Popover } from '@headlessui/react';
 
-export const Container = styled.div`
+export const PopoverContainer = styled(Popover)`
 	${tw`
 		absolute
 		bottom-5
