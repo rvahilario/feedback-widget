@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Head from 'next/head';
 import tw from 'twin.macro';
 import styled from 'styled-components';
+import { Widget } from '@/components/Widget';
 // import styles from '@/styles/';
 
 import { ExampleComponent } from '@/components/ExampleComponent';
@@ -48,8 +50,9 @@ export default function Home() {
 				<title>'TypeScript starter for Next.js'</title>
 			</Head>
 			<main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-				<ExampleComponent title="Example" />
-				<main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+				<Widget></Widget>
+				{/* <ExampleComponent title="Example" /> */}
+				{/* <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
 					<StyledButton>In Style</StyledButton>
 					<br />
 					<TailwindButton>In Tailwind Style</TailwindButton>
@@ -57,7 +60,7 @@ export default function Home() {
 					<ConditionalButton isRed={false}>
 						Conditional Tailwind
 					</ConditionalButton>
-				</main>
+				</main> */}
 			</main>
 		</>
 	);
