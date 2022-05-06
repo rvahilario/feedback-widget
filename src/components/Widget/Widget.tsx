@@ -2,11 +2,14 @@ import { PopoverContainer, FeedbackButton } from './styles';
 import { WidgetProps } from './types';
 import { ChatTeardropDots } from 'phosphor-react';
 import { Popover } from '@headlessui/react';
+import { WidgetForm } from '../WidgetForm';
 
 export const Widget = ({}: WidgetProps) => {
 	return (
 		<PopoverContainer>
-			<Popover.Panel>Testing handleToggleWidgetVisibility</Popover.Panel>
+			<Popover.Panel>
+				<WidgetForm />
+			</Popover.Panel>
 
 			<Popover.Button>
 				<FeedbackButton className="group">
