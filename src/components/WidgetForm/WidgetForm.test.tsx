@@ -5,7 +5,7 @@ describe('<WidgetForm />', () => {
 	it('should render WidgetForm', () => {
 		render(<WidgetForm />);
 
-		const widgetForm = screen.getByText('WidgetForm');
+		const widgetForm = screen.getByText('Send your feedback');
 
 		expect(widgetForm).toBeInTheDocument();
 	});
