@@ -1,10 +1,14 @@
-import { Container } from './styles';
+import { Container, ImageContainer, TitleContainer } from './styles';
 import { FeedbackTypeButtonProps } from './types';
 
-export const FeedbackTypeButton = ({}: FeedbackTypeButtonProps) => {
+export const FeedbackTypeButton = ({
+	title,
+	image,
+}: FeedbackTypeButtonProps) => {
 	return (
 		<Container>
-			<h1>FeedbackTypeButton</h1>
+			<ImageContainer>{image}</ImageContainer>
+			<TitleContainer>{title}</TitleContainer>
 		</Container>
 	);
 };

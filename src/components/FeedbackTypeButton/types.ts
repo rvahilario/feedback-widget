@@ -1,1 +1,4 @@
-export interface FeedbackTypeButtonProps {}
+export interface FeedbackTypeButtonProps {
+	title: string;
+	image: string;
+}
