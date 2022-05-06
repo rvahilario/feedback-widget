@@ -1,4 +1,5 @@
 export interface FeedbackTypeButtonProps {
 	title: string;
-	image: string;
+	srcImage: string;
+	altImage: string;
 }

@@ -4,27 +4,23 @@ import tw from 'twin.macro';
 export const Container = styled.button`
 	background-color: #27272a;
 	${tw`
-		h-28
 		w-24
-		rounded-b-lg
+		py-5
+		rounded-lg
+		flex-1
+		flex
 		flex-col
 		items-center
-	`}
-`;
-
-export const ImageContainer = styled.div`
-	${tw`
-		bg-red-400
-		h-10
-		w-10
+		gap-2
+		border-2
+		border-transparent
+		hover:border-brand
+		focus:border-brand
+		focus:outline-none
 	`}
 `;
 
 export const TitleContainer = styled.div`
 	${tw`
-		h-6
-		w-20
-		rounded-b-lg
-		bg-red-400
 	`}
 `;

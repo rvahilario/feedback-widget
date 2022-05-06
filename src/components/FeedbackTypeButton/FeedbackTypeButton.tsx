@@ -1,13 +1,15 @@
-import { Container, ImageContainer, TitleContainer } from './styles';
+import Image from 'next/image';
+import { Container, TitleContainer } from './styles';
 import { FeedbackTypeButtonProps } from './types';
 
 export const FeedbackTypeButton = ({
 	title,
-	image,
+	srcImage,
+	altImage,
 }: FeedbackTypeButtonProps) => {
 	return (
-		<Container>
-			<ImageContainer>{image}</ImageContainer>
+		<Container type="button">
+			<Image src={srcImage} alt={altImage} width="40px" height="40px" />
 			<TitleContainer>{title}</TitleContainer>
 		</Container>
 	);
