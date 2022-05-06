@@ -5,8 +5,8 @@ describe('<Widget />', () => {
 	it('should render Widget', () => {
 		render(<Widget />);
 
-		const widget = screen.getByText('Widget');
+		const widgetButton = screen.getByText('Feedback');
 
-		expect(widget).toBeInTheDocument();
+		expect(widgetButton).toBeInTheDocument();
 	});
 });
