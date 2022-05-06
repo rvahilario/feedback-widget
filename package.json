@@ -27,7 +27,7 @@
 		"build": "next build",
 		"start": "next start",
 		"test": "jest",
-		"test-watch": "yarn test --watch",
+		"testw": "yarn test --watch",
 		"type-check": "tsc",
 		"lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
 		"format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
