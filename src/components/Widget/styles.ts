@@ -7,12 +7,15 @@ export const PopoverContainer = styled(Popover)`
 		absolute
 		bottom-5
 		right-5
+		flex
+		flex-col
+		items-end
 	`}
 `;
 
 export const FeedbackButton = styled.button`
 	${tw`
-		bg-primary-500
+		bg-brand
 		text-white
 		h-12
 		px-3
