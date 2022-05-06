@@ -13,7 +13,7 @@ export const PopoverContainer = styled(Popover)`
 	`}
 `;
 
-export const FeedbackButton = styled.button`
+export const FeedbackButton = styled.div`
 	${tw`
 		bg-brand
 		text-white
