@@ -1,9 +1,14 @@
 import React, { FC, ReactElement } from 'react';
 import { render, RenderOptions } from '@testing-library/react';
 import Theme from '@/styles/theme';
+import { Popover } from '@headlessui/react';
 
 const AllTheProviders: FC = ({ children }) => {
-	return <Theme>{children}</Theme>;
+	return (
+		<Theme>
+			<Popover>{children}</Popover>
+		</Theme>
+	);
 };
 
 const customRender = (
