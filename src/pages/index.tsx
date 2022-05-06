@@ -49,18 +49,8 @@ export default function Home() {
 			<Head>
 				<title>'TypeScript starter for Next.js'</title>
 			</Head>
-			<main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-				<Widget></Widget>
-				{/* <ExampleComponent title="Example" /> */}
-				{/* <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-					<StyledButton>In Style</StyledButton>
-					<br />
-					<TailwindButton>In Tailwind Style</TailwindButton>
-					<br />
-					<ConditionalButton isRed={false}>
-						Conditional Tailwind
-					</ConditionalButton>
-				</main> */}
+			<main>
+				<Widget />
 			</main>
 		</>
 	);
