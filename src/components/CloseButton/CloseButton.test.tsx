@@ -3,9 +3,9 @@ import { CloseButton } from './CloseButton';
 
 describe('<CloseButton />', () => {
 	it('should render CloseButton', () => {
-		render(<CloseButton />);
+		render(<CloseButton weight="bold" />);
 
-		const closeButton = screen.getByText('CloseButton');
+		const closeButton = screen.getByRole('button');
 
 		expect(closeButton).toBeInTheDocument();
 	});
